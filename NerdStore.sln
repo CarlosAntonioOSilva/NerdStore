@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalogo.Domain",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Core", "src\NerdStore.Core\NerdStore.Core.csproj", "{B76CB7A9-025B-4847-936A-57B129268CA9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalogo.Data", "src\NerdStore.Catalogo.Data\NerdStore.Catalogo.Data.csproj", "{D4BE5ED3-0738-4AAE-98D5-CF971376D738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Catalogo.Application", "src\NerdStore.Catalogo.Application\NerdStore.Catalogo.Application.csproj", "{B4304E0A-002C-411F-8DAC-D076EC1787C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{B76CB7A9-025B-4847-936A-57B129268CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B76CB7A9-025B-4847-936A-57B129268CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B76CB7A9-025B-4847-936A-57B129268CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4BE5ED3-0738-4AAE-98D5-CF971376D738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4BE5ED3-0738-4AAE-98D5-CF971376D738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4BE5ED3-0738-4AAE-98D5-CF971376D738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4BE5ED3-0738-4AAE-98D5-CF971376D738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4304E0A-002C-411F-8DAC-D076EC1787C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4304E0A-002C-411F-8DAC-D076EC1787C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4304E0A-002C-411F-8DAC-D076EC1787C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4304E0A-002C-411F-8DAC-D076EC1787C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +62,8 @@ Global
 		{1D477FF8-6A58-486E-838C-C12B4E3DFE4A} = {0FF9E8B9-7E86-40FE-BA22-BE40E6CC40B1}
 		{E97A374A-68A3-4643-B034-74FAA5F918B8} = {7B2E6E51-C13B-4033-9EC8-76D9061459BF}
 		{B76CB7A9-025B-4847-936A-57B129268CA9} = {E0258421-EA41-4B59-90CC-5D1FFE23992A}
+		{D4BE5ED3-0738-4AAE-98D5-CF971376D738} = {7B2E6E51-C13B-4033-9EC8-76D9061459BF}
+		{B4304E0A-002C-411F-8DAC-D076EC1787C9} = {7B2E6E51-C13B-4033-9EC8-76D9061459BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1306AA6-1BAE-4AD2-A2FD-29D97E0F648F}

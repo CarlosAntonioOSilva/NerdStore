@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vsqoQaYyKvTrDN7BYQEIghf/gHSCONwwnqk2FvPgtktGj1L+UzDYbzrXoYillkR55Hw5aTGHnsXECdt/7sQSkQ==",
+  "dgSpecHash": "oorKZgYYUaDZHDwbMS56tI+O2hsaNP0zYN/La6x8A50aTZ98ud59J6jPOSMUB4+klm6loQoFyp4tCMK9kWu0NA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\carlo\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

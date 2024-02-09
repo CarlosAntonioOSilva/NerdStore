@@ -8,8 +8,6 @@ namespace NerdStore.Core.DomainObjects
       neste caso, uma identidade única para todas as entidades.!     
     */
 
-
-
     // Declaração de uma classe abstrata chamada Entity.
     // abstract - indica que a classe não pode ser instanciada, pode ser apenas herdada
     public abstract class Entity
@@ -124,3 +122,16 @@ namespace NerdStore.Core.DomainObjects
         }
     }
 }
+
+/*
+ 
+**Guid** - permite saber o valor do ID antes de persistir na base de dados!
+
+**Entity - t**odo mundo que for uma entidade vai herdar da classe “Entity”!
+
+**Equals** - é um método que toda classe/objeto possui!
+
+**GetHashCode** - é como fosse um código exclusivo de uma classe. Neste caso, 
+*como uma classe está sendo comparada com outra para verificar se são iguais ou não!
+
+*/

@@ -7,11 +7,13 @@ namespace NerdStore.Catalogo.Domain
     // IAggregateRoot - interface de marcação utilizada para indicar se um classe é uma "entidade" ou uma "raiz de agregação"
     public class Produto : Entity, IAggregateRoot 
     {
+        // ATENÇÃO: Esta entidade está recebendo o número de ID da classe "Entity2"
+
         // Declaração das propriedades da classe Produto.
         public Guid CategoriaId { get; private set; } // Id da entidade "Categoria" no banco de dados
         public string Nome { get; private set; }
         public string Descricao { get; private set; }
-        public bool Ativo { get; private set; }
+        public bool Ativo { get; private set; } // Recebe os status do pedido True = Ativado ou False = Destativado
         public decimal Valor { get; private set; }
         public DateTime DataCadastro { get; private set; }
         public string Imagem { get; private set; }
@@ -19,7 +21,8 @@ namespace NerdStore.Catalogo.Domain
         public Dimensoes Dimensoes { get; private set; } // Recebe as dimensões do produto
         public Categoria Categoria { get; private set; } // Recebe a categoria do produto
 
-        // Construtor protegido da classe Produto.
+        // O construtor sem parâmetro é necessário porque o EF tem problemas em popular objetos
+        // que não tenham o construtor aberto (sem parâmetros)
         protected Produto() { }
 
         // Construtor da classe Produto que recebe parâmetros para inicializar as propriedades.
@@ -63,7 +66,7 @@ namespace NerdStore.Catalogo.Domain
         // Método para debitar o estoque do produto.
         public void DebitarEstoque(int quantidade)
         {
-            // Verifica se a quantidade é negativa e a torna positiva.
+            // Verifica se a quantidade recebida é negativa e a torna positiva.
             if (quantidade < 0) quantidade *= -1;
 
             // Verifica se há estoque suficiente e lança uma exceção se não houver.
@@ -83,6 +86,7 @@ namespace NerdStore.Catalogo.Domain
         // Método para verificar se o produto possui estoque suficiente.
         public bool PossuiEstoque(int quantidade)
         {
+            // Retorna a quantidade do produto em estoque se for maior ou igual a quantidade recebida!
             return QuantidadeEstoque >= quantidade;
         }
 
